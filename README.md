@@ -20,14 +20,6 @@ It can be useful for:
 
 🚀 Building a foundation in relational databases
 
-📂 Repository Structure
-IC-2K25-14_DBMS_Anuj_Thakor/
-│
-├── 001_Lab_Assignments/
-│   └── DBMS laboratory assignments
-│
-└── README.md
-
 🧠 Topics Covered
 
 The practical work in this repository focuses on fundamental DBMS concepts such as:
