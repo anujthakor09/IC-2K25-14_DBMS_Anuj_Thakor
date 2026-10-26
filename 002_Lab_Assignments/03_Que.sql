@@ -1,31 +1,24 @@
---Get the total salaries payable to employees
+--Get all first names in uppercase
 
-SELECT SUM(salary) AS total_salary
-FROM employees;
-
---------------------------------------------------
---Get the maximum and minimum salary
-
-SELECT
-    MAX(salary) AS maximum_salary,
-    MIN(salary) AS minimum_salary
+SELECT UPPER(first_name) AS first_name
 FROM employees;
 --------------------------------------------------
---Get the average salary and number of employees
+--Get the first 3 characters of each first name
 
-SELECT
-    AVG(salary) AS average_salary,
-    COUNT(*) AS number_of_employees
+SELECT SUBSTRING(first_name, 1, 3) AS first_three_characters
 FROM employees;
 --------------------------------------------------
---Get the number of employees working with the company
+--Calculate 171 × 214 + 625
 
-SELECT COUNT(*) AS total_employees
-FROM employees;
-
+SELECT 171 * 214 + 625 AS result;
 --------------------------------------------------
---Get the number of jobs available in the employees table
+--Display full employee names, such as Ellen Abel or Sundar Ande
 
-SELECT COUNT(DISTINCT job_id) AS number_of_jobs
+SELECT CONCAT(first_name, ' ', last_name) AS employee_name
+FROM employees;
+--------------------------------------------------
+--Get first names after removing whitespace from both sides
+
+SELECT TRIM(first_name) AS first_name
 FROM employees;
 --------------------------------------------------
